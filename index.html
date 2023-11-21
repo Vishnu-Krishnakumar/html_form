@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML form</title>
+    </head>
+    <body>
+        <form method="post">
+            <fieldset>
+                <legend>Add user</legend>
+
+                <div>
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="first_Name">
+                </div>
+                <div>
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="last_Name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="e-mail">
+                </div>
+
+                <div>
+                    <label for="status">Status</label>
+                    <select id="status" name="status_school">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Choose your favorite programming language</p>
+                    <input type="radio" id ="html" value="html" name="pl" checked>
+                    <label for="html">HTML</label>
+                    <input type="radio" id ="css" value="css" name="pl">
+                    <label for="css">CSS</label>
+                    <input type="radio" id ="css" value="css" name="pl">
+                    <label for="css">JavaScript</label>
+                </div>
+                <label>Comments</label>
+                <div>
+                    <textarea id="comments" name="comments" rows="10" cols="100"></textarea>
+                </div>
+                <div>
+                    <label for="curent">Current Date:</label>
+                    <input type="date" id="current" name="comments">
+                </div>
+                <div>
+                    <input type="checkbox" id ="sign_up" value="sign_up" name ="submission">
+                    <label for="sign_up">Sign up for newspaper</label>
+                    <input type="checkbox" id="tos" value="tos" name="submission">
+                    <label for="tos">Agree to terms and conditions</label>
+                </div>
+                <div>
+                    <button class="submit" type="button">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
